@@ -10,9 +10,9 @@ from bot import SHORTENER, SHORTENER_API
 
 
 def short_url(longurl):
-    if "shorte.st" in SHORTENER:
+    if "bot.pdisk.online" in SHORTENER:
         disable_warnings()
-        return requests.get(f'http://api.shorte.st/stxt/{SHORTENER_API}/{longurl}', verify=False).text
+        return requests.get(f'http://api.bot.pdisk.online/stxt/{SHORTENER_API}/{longurl}', verify=False).text
     elif "linkvertise" in SHORTENER:
         url = quote(base64.b64encode(longurl.encode("utf-8")))
         linkvertise = [
