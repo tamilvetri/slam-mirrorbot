@@ -1,11 +1,7 @@
 # Implemented by https://github.com/junedkh
 
 import requests
-import random
-import base64
 import pyshorteners
-from urllib.parse import quote
-from urllib3 import disable_warnings
 from bot import SHORTENER, SHORTENER_API
 
 
